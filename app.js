@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/users', (req, res) => {
     console.log('GET /users')
-    res.send([{ id: 1, name: "brad" }])
+    res.send([{ id: 1, name: "bradley" }])
 })
 
 app.listen(port, () => {
