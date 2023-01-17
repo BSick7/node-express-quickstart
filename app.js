@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/orgs', (req, res) => {
     console.log('GET /orgs')
+    
     res.send({ id: 1, name: 'nullstone' })
 })
 
