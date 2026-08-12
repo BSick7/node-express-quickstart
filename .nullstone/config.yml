@@ -3,6 +3,8 @@ version: "0.1"
 subdomains:
   express-subdomain:
     module: nullstone/autogen-aws-subdomain
+    dns:
+      template: "express.{{ NULLSTONE_ENV }}"
 
 apps:
   node-express-quickstart:
