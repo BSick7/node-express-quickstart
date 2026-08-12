@@ -7,11 +7,14 @@ subdomains:
 apps:
   node-express-quickstart:
     module: nullstone/aws-fargate-service
+    connections:
+      cluster-namespace: namespace0
     vars:
       cpu: 256
       memory: 512
       port: 80
     capabilities:
-      - module: nullstone/aws-load-balancer
+      ingress:
+        module: nullstone/aws-load-balancer
         connections:
           subdomain: express-subdomain
