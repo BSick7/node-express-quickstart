@@ -20,3 +20,4 @@ apps:
         module: nullstone/aws-load-balancer
         connections:
           subdomain: express-subdomain
+
